@@ -1,3 +1,80 @@
 {
-    
-}
+    "intro": {
+      "message": "Hola, soy chat L13i. ¿Cómo llegaste aquí?",
+      "options": [
+        "Llegué por LinkedIn",
+        "Me la recomendó un amigo",
+        "Vine por uno de sus proyectos",
+        "Tan solo navegaba por internet",
+        "Encontré el portafolio en GitHub"
+      ],
+      "emotion": "sorprendido"
+    },
+    "exit": {
+      "message": "Fue un gusto ayudarte a explorar el portafolio de Lucas. Espero que hayas disfrutado de esta experiencia interactiva tanto como nosotros al crearla. ¡Si necesitas algo más, no dudes en regresar! 🌟 ¡Hasta pronto y éxito en tu camino!",
+      "emotion": "feliz"
+    },
+    "general_interaction": {
+      "LinkedIn": {
+        "message": "Ya que estás aquí, hay muchas cosas interesantes que puedo mostrarte. ¿Qué te gustaría hacer ahora?",
+        "options": [
+          "Ver proyectos destacados",
+          "Explorar redes sociales",
+          "Ver GitHub",
+          "Cuéntame más sobre Lucas",
+          "Visitar LinkedIn",
+          "Salir"
+        ],
+        "emotion": "feliz"
+      },
+      "GitHub": {
+        "message": "¡Qué divertido fue esto! 🎉 ¿Qué quieres hacer ahora?",
+        "options": [
+          "Ver proyectos destacados",
+          "Explorar redes sociales",
+          "Ver GitHub",
+          "Cuéntame más sobre Lucas",
+          "Visitar LinkedIn",
+          "Salir"
+        ],
+        "emotion": "feliz"
+      },
+      "internet": {
+        "message": "¿Qué te parece si exploramos juntos? ¿Quieres saber más sobre mí o sobre Lucas?",
+        "options": [
+          "Ver proyectos destacados",
+          "Explorar redes sociales",
+          "Ver GitHub",
+          "Cuéntame más sobre Lucas",
+          "Visitar LinkedIn",
+          "Salir"
+        ],
+        "emotion": "pensativo"
+      },
+      "projects": {
+        "message": "¡Genial! Lucas estará emocionado de saber que te interesó. Aquí tienes una lista de sus proyectos destacados. Haz clic en el que quieras explorar más.",
+        "options": [
+          "Ver proyectos destacados",
+          "Explorar redes sociales",
+          "Ver GitHub",
+          "Cuéntame más sobre Lucas",
+          "Visitar LinkedIn",
+          "Salir"
+        ],
+        "emotion": "feliz"
+      },
+      "friend": {
+        "message": "Sabes, yo no tengo muchos amigos, pero tengo a Lucas, que es mi creador. Le puso tanto cariño al diseñarme que siento que soy quien soy gracias a él. ¡Eso hacen los amigos, se apoyan y se cuidan mutuamente! 💙",
+        "options": [
+          "Ver proyectos destacados",
+          "Explorar redes sociales",
+          "Ver GitHub",
+          "Cuéntame más sobre Lucas",
+          "Visitar LinkedIn",
+          "Salir"
+        ],
+        "emotion": "feliz"
+      }
+    }
+  }
+  
