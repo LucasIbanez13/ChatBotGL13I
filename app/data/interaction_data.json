@@ -1,3 +1,101 @@
 {
-    
-}
+    "linkedinPath": [
+      {
+        "id": "firstMessageLinkedin",
+        "message": "¡Oh, genial! Lucas está muy activo allí últimamente.",
+        "emotion": "feliz",
+        "nextId": "secondMessageLinkedin"
+      },
+      {
+        "id": "secondMessageLinkedin",
+        "message": "LinkedIn es el lugar perfecto para mostrar lo que hacemos y conectar con personas increíbles. ¿Qué te gustaría explorar?",
+        "emotion": "emocionado",
+        "options": [
+          {
+            "text": "Proyectos Destacados",
+            "nextId": "showProjects"
+          },
+          {
+            "text": "Habilidades Profesionales",
+            "nextId": "showSkills"
+          },
+          {
+            "text": "Descargar CV",
+            "nextId": "downloadCV"
+          },
+          {
+            "text": "Conectar en LinkedIn",
+            "nextId": "connectLinkedin"
+          }
+        ]
+      },
+      {
+        "id": "showProjects",
+        "message": "Déjame mostrarte algunos de los proyectos que Lucas ha estado desarrollando.",
+        "emotion": "interesado",
+        "options": [
+          {
+            "text": "Ver",
+            "nextId": "redirectToProjectsLink"
+          }
+        ]
+      },
+      {
+        "id": "showSkills",
+        "message": "Aquí tienes un resumen de las tecnologías y habilidades en las que Lucas se destaca.",
+        "emotion": "orgulloso",
+        "options": [
+          {
+            "text": "Ver",
+            "nextId": "redirectToSkillsLink"
+          }
+        ]
+      },
+      {
+        "id": "connectLinkedin",
+        "message": "¿Te gustaría visitar su perfil en LinkedIn para conectar directamente?",
+        "emotion": "amistoso",
+        "options": [
+          {
+            "text": "Ver",
+            "nextId": "redirectToLinkedin"
+          }
+        ]
+      },
+      {
+        "id": "downloadCV",
+        "message": "¡Claro! Estoy preparando el CV de Lucas... ¡y listo! Creo que ya se descargó... ¿o no?",
+        "emotion": "emocionado",
+        "options": [
+          {
+            "text": "Volver a descargar",
+            "nextId": "retryDownload"
+          },
+          {
+            "text": "Sí, ya se descargó",
+            "nextId": "confirmDownload"
+          },
+          {
+            "text": "No estoy seguro",
+            "nextId": "notSureDownload"
+          }
+        ]
+      },
+      {
+        "id": "retryDownload",
+        "message": "Déjame intentarlo de nuevo... ¡y listo otra vez! Ahora sí estoy seguro. 😌",
+        "emotion": "aliviado"
+      },
+      {
+        "id": "confirmDownload",
+        "message": "¡Perfecto!",
+        "emotion": "feliz"
+      },
+      {
+        "id": "notSureDownload",
+        "message": "Mmm... tal vez deberíamos intentarlo una vez más por si acaso. ¡Listo! Inténtalo ahora. 😉",
+        "emotion": "juguetón"
+      }
+    ]
+  }
+  
