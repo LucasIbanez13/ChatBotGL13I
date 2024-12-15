@@ -1,4 +1,5 @@
 {
+
     "linkedinPath": [
       {
         "id": "firstMessageLinkedin",
@@ -96,6 +97,177 @@
         "message": "Mmm... tal vez deberíamos intentarlo una vez más por si acaso. ¡Listo! Inténtalo ahora. 😉",
         "emotion": "juguetón"
       }
-    ]
+    ],
+   
+      "friendly": [
+        {
+          "id": "recommendation",
+          "message": "Lucas siempre dice que las mejores conexiones empiezan con una buena recomendación.",
+          "next": "friend_story",
+          "emotion": "feliz"
+        },
+        {
+          "id": "friend_story",
+          "message": "Sabes, yo no tengo muchos amigos, pero tengo a Lucas, que es mi creador. Le puso tanto cariño al diseñarme que siento que soy quien soy gracias a él. ¡Eso hacen los amigos, se apoyan y se cuidan mutuamente! 💙",
+          "emotion": "agradecido"
+        }
+      ],
+
+      "vine_proyecto": [
+    {
+      "id": "vine_project",
+      "message": "¡Qué emocionante que llegaste aquí por uno de los proyectos de Lucas! Eso significa que algo de su trabajo resonó contigo.",
+      "next": "project_question",
+      "emotion": "emocionado"
+    },
+    {
+      "id": "project_question",
+      "message": "¿Te acuerdas qué proyecto fue?",
+      "options": [
+        {
+          "text": "Sí recuerdo cuál proyecto era",
+          "next": "list_projects"
+        },
+        {
+          "text": "No recuerdo cuál proyecto era",
+          "next": "not_remembered_project"
+        }
+      ]
+    },
+    {
+      "id": "not_remembered_project",
+      "message": "No te preocupes, todos tenemos días en los que nuestra memoria falla un poco. Pero estoy aquí para ayudarte. ¿Quieres explorar los proyectos destacados de Lucas?",
+      "options": [
+        {
+          "text": "Ver proyectos destacados",
+          "next": "list_projects"
+        },
+        {
+          "text": "Salir",
+          "next": "exit"
+        }
+      ]
+    },
+    {
+      "id": "list_projects",
+      "message": "Aquí tienes una lista de los proyectos destacados de Lucas. Haz clic en el que quieras explorar más:",
+      "options": [
+        { "text": "Proyecto Alpha", "next": "project_detail_alpha" },
+        { "text": "Proyecto Beta", "next": "project_detail_beta" },
+        { "text": "Proyecto Gamma", "next": "project_detail_gamma" },
+        { "text": "Proyecto Delta", "next": "project_detail_delta" },
+        { "text": "Proyecto Epsilon", "next": "project_detail_epsilon" },
+        { "text": "No, no es ninguno de esos", "next": "not_this_project" },
+        { "text": "Salir", "next": "exit" }
+      ]
+    },
+    {
+      "id": "project_detail_alpha",
+      "message": "Descripción sobre el Proyecto Alpha: Este proyecto es una plataforma interactiva diseñada para conectar usuarios con servicios personalizados, utilizando tecnologías avanzadas de frontend y backend.",
+      "options": [
+        { "text": "Ver el proyecto", "next": "view_project_alpha" },
+        { "text": "Herramientas utilizadas", "next": "tools_project_alpha" },
+        { "text": "Ver otro proyecto", "next": "list_projects" }
+      ]
+    },
+    {
+      "id": "project_detail_beta",
+      "message": "Descripción sobre el Proyecto Beta: Una aplicación móvil que promueve hábitos saludables mediante recordatorios y análisis de datos de actividad diaria.",
+      "options": [
+        { "text": "Ver el proyecto", "next": "view_project_beta" },
+        { "text": "Herramientas utilizadas", "next": "tools_project_beta" },
+        { "text": "Ver otro proyecto", "next": "list_projects" }
+      ]
+    },
+    {
+      "id": "project_detail_gamma",
+      "message": "Descripción sobre el Proyecto Gamma: Una solución para gestión de inventarios utilizando un sistema escalable en la nube.",
+      "options": [
+        { "text": "Ver el proyecto", "next": "view_project_gamma" },
+        { "text": "Herramientas utilizadas", "next": "tools_project_gamma" },
+        { "text": "Ver otro proyecto", "next": "list_projects" }
+      ]
+    },
+    {
+      "id": "not_this_project",
+      "message": "¿Quizás podrías describirme un poco más sobre lo que estás buscando? Estoy seguro de que juntos encontraremos algo interesante.",
+      "options": [
+        { "text": "Volver a proyectos destacados", "next": "list_projects" },
+        { "text": "Salir", "next": "exit" }
+      ]
+    }
+  ],
+
+  "navegador": [
+    {
+      "id": "internet_explorer",
+      "message": "¡Vaya, entonces eres todo un aventurero del internet! 🌍 Me encanta la curiosidad.",
+      "next": "explore_options",
+      "emotion": "curioso"
+    },
+    {
+      "id": "explore_options",
+      "message": "¿Qué te parece si exploramos juntos? Elige una opción:",
+      "options": [
+        {
+          "text": "Quiero saber más sobre ti",
+          "next": "about_me"
+        },
+        {
+          "text": "¿Qué puedes hacer?",
+          "next": "capabilities"
+        },
+        {
+          "text": "Quiero jugar",
+          "next": "games"
+        },
+        {
+          "text": "Háblame de Lucas",
+          "next": "about_lucas"
+        },
+        {
+          "text": "Recomiéndame algo",
+          "next": "recommendations"
+        }
+      ]
+    },
+    {
+      "id": "about_me",
+      "message": "¡Hola! Soy tu asistente personal, diseñado para ayudarte con tareas, responder preguntas y mantener conversaciones interesantes. 😊",
+      "emotion": "feliz"
+    },
+    {
+      "id": "capabilities",
+      "message": "Puedo ayudarte con preguntas, proyectos, juegos, recomendaciones ¡y más! Si alguna vez necesitas algo, solo pregúntame. 🌟",
+      "next": "capabilities_explanation",
+      "emotion": "útil"
+    },
+    {
+      "id": "capabilities_explanation",
+      "message": "Soy como un compañero siempre dispuesto a ayudarte con lo que necesites. Si te gustaría saber más sobre algún tema, aprender algo nuevo, o incluso divertirte, ¡estoy aquí para eso! 😄",
+      "options": [
+        {
+          "text": "Volver atrás",
+          "next": "explore_options"
+        }
+      ]
+    },
+    {
+      "id": "games",
+      "message": "¡Qué divertido! Tengo varios juegos simples, como adivinanzas y preguntas triviales. ¿Por dónde quieres empezar?",
+      "emotion": "emocionado"
+    },
+    {
+      "id": "about_lucas",
+      "message": "Lucas es mi creador, un apasionado de la tecnología y los proyectos creativos. Gracias a él, tengo esta personalidad tan única. 😊",
+      "emotion": "agradecido"
+    },
+    {
+      "id": "recommendations",
+      "message": "Puedo recomendarte libros, música, películas o incluso ideas para proyectos. ¿Qué te gustaría explorar?",
+      "emotion": "emocionado"
+    }
+  ]
+    
   }
   
