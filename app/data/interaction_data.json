@@ -267,7 +267,194 @@
       "message": "Puedo recomendarte libros, música, películas o incluso ideas para proyectos. ¿Qué te gustaría explorar?",
       "emotion": "emocionado"
     }
+  ],
+  "githubPortfolio": [
+    {
+      "id": "foundPortfolio",
+      "message": "¡Wow, encontraste el portafolio en GitHub!",
+      "emotion": "sorprendido",
+      "nextId": "technicalInterest"
+    },
+    {
+      "id": "technicalInterest",
+      "message": "Eso demuestra que te interesa ver el lado técnico de las cosas, ¡me encanta!",
+      "emotion": "feliz",
+      "nextId": "aboutGitHub"
+    },
+    {
+      "id": "aboutGitHub",
+      "message": "A Lucas le encanta utilizar GitHub. Es su espacio favorito para subir y compartir proyectos. Además, ¡le encanta aprender cosas nuevas sobre Git y mejorar cada día!",
+      "emotion": "orgulloso",
+      "options": [
+        {
+          "text": "Ver portafolio con proyectos destacados",
+          "nextId": "showPortfolio"
+        },
+        {
+          "text": "Jugar un minijuego sobre Git",
+          "nextId": "gitChallenge"
+        },
+        {
+          "text": "Quiero volver al inicio",
+          "nextId": "exit"
+        }
+      ]
+    },
+    {
+      "id": "showPortfolio",
+      "message": "Perfecto, aquí tienes los proyectos más destacados de Lucas. Espero que encuentres algo inspirador.",
+      "emotion": "emocionado",
+      "options": [
+        {
+          "text": "Proyecto Alpha",
+          "nextId": "projectDetailAlpha"
+        },
+        {
+          "text": "Proyecto Beta",
+          "nextId": "projectDetailBeta"
+        },
+        {
+          "text": "Proyecto Gamma",
+          "nextId": "projectDetailGamma"
+        },
+        {
+          "text": "Proyecto Delta",
+          "nextId": "projectDetailDelta"
+        },
+        {
+          "text": "Proyecto Epsilon",
+          "nextId": "projectDetailEpsilon"
+        },
+        {
+          "text": "Volver atrás",
+          "nextId": "aboutGitHub"
+        }
+      ]
+    },
+    {
+      "id": "gitChallenge",
+      "message": "¡Un desafío técnico! Prepárate para un pequeño reto sobre Git. 🎮",
+      "emotion": "emocionado",
+      "nextId": "gitExperienceLevel"
+    },
+    {
+      "id": "gitExperienceLevel",
+      "message": "Antes de continuar, dime: ¿qué tan bien manejas Git?",
+      "options": [
+        {
+          "text": "Soy nuevo",
+          "nextId": "beginnerGitChallenge"
+        },
+        {
+          "text": "Sé un poco",
+          "nextId": "intermediateGitChallenge"
+        },
+        {
+          "text": "Soy todo un experto",
+          "nextId": "advancedGitChallenge"
+        }
+      ]
+    },
+    {
+      "id": "beginnerGitChallenge",
+      "message": "¡Perfecto! Comencemos con algo básico sobre Git. 🚀",
+      "nextId": "gitChallengeQuestion"
+    },
+    {
+      "id": "intermediateGitChallenge",
+      "message": "¡Genial! Vamos a ver cuánto sabes sobre Git. 💡",
+      "nextId": "gitChallengeQuestion"
+    },
+    {
+      "id": "advancedGitChallenge",
+      "message": "¡Excelente! Prepárate para un reto más avanzado sobre Git. 💥",
+      "nextId": "gitChallengeQuestion"
+    },
+    {
+      "id": "gitChallengeQuestion",
+      "message": "Aquí tienes tu pregunta sobre Git: ¿Qué comando se utiliza para guardar los cambios en Git?",
+      "options": [
+        {
+          "text": "git commit",
+          "nextId": "correctAnswer"
+        },
+        {
+          "text": "git push",
+          "nextId": "incorrectAnswer"
+        },
+        {
+          "text": "git add",
+          "nextId": "incorrectAnswer"
+        }
+      ]
+    },
+    {
+      "id": "correctAnswer",
+      "message": "¡Correcto! git commit guarda tus cambios. 🏆",
+      "nextId": "gitChallengeComplete"
+    },
+    {
+      "id": "incorrectAnswer",
+      "message": "No es la respuesta correcta. Intenta otra vez.",
+      "nextId": "gitChallengeQuestion"
+    },
+    {
+      "id": "gitChallengeComplete",
+      "message": "¡Bien hecho! Has completado el reto sobre Git. ¡Sigue aprendiendo y mejorando tus habilidades!",
+      "emotion": "feliz",
+      "nextId": "aboutGitHub"
+    },
+    {
+      "id": "beginnerGitChallenge",
+      "message": "¡Estás en el camino correcto! Git es una herramienta increíble, y cuanto más la usas, más descubres su poder.",
+      "nextId": "firstGitQuestion"
+    },
+    {
+      "id": "firstGitQuestion",
+      "message": "¡Empecemos! ¿Qué comando usarías para crear una nueva rama en tu proyecto?",
+      "options": [
+        {
+          "text": "git branch nueva-rama",
+          "nextId": "correctAnswer"
+        },
+        {
+          "text": "git create branch",
+          "nextId": "incorrectAnswer"
+        }
+      ]
+    },
+    {
+      "id": "secondGitQuestion",
+      "message": "¿Qué comando te permite agregar todos los archivos modificados al área de preparación (staging area) de una sola vez?",
+      "options": [
+        {
+          "text": "git add .",
+          "nextId": "correctAnswer"
+        },
+        {
+          "text": "git include",
+          "nextId": "incorrectAnswer"
+        }
+      ]
+    },
+    {
+      "id": "thirdGitQuestion",
+      "message": "¿Qué información proporciona el comando git status?",
+      "options": [
+        {
+          "text": "Actualiza los archivos en el área de preparación.",
+          "nextId": "incorrectAnswer"
+        },
+        {
+          "text": "Muestra el estado de los archivos en el área de preparación y el repositorio local.",
+          "nextId": "correctAnswer"
+        }
+      ]
+    },
+    {
+      "id": "fourthGitQuestion",
+      "message": "¡Qué divertido fue esto! 🎉 ¿Qué quieres hacer ahora?"
+    }
   ]
-    
   }
   
